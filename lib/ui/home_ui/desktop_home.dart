@@ -15,14 +15,59 @@ class _DesktopHomeState extends State<DesktopHome> {
         padding: EdgeInsets.all(5),
         child: Column(
           children: [
-            Image.asset('assets/images/logo1.png'),
+            Row(
+              // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              // crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Column(
+                  children: [
+                    Image.asset(
+                      'assets/images/logo1.png',
+                      height: 150,
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  width: MediaQuery.of(context).size.width * 0.25,
+                ),
+                _navbar(),
+              ],
+            ),
             Text('flutdev'),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.settings),
+        child: Icon(Icons.language),
         onPressed: () {},
+      ),
+    );
+  }
+
+  Widget _navbar() {
+    return Container(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(
+            'home',
+            style: TextStyle(fontSize: 30),
+          ),
+          SizedBox(
+            width: MediaQuery.of(context).size.width * 0.05,
+          ),
+          Text(
+            'home',
+            style: TextStyle(fontSize: 30),
+          ),
+          SizedBox(
+            width: MediaQuery.of(context).size.width * 0.05,
+          ),
+          Text(
+            'home',
+            style: TextStyle(fontSize: 30),
+          ),
+        ],
       ),
     );
   }
