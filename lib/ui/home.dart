@@ -12,21 +12,11 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        actions: [
-          IconButton(
-            icon: Icon(Icons.settings),
-            onPressed: () {},
-          )
-        ],
-      ),
-      body: ScreenTypeLayout(
-        mobile: MobileHome(),
-        tablet: TabletHome(),
-        desktop: DesktopHome(),
-        // watch: Container(color: Colors.purple),
-      ),
+    return ScreenTypeLayout(
+      mobile: MobileHome(),
+      tablet: TabletHome(),
+      desktop: DesktopHome(),
+      // watch: Container(color: Colors.purple),
     );
   }
 }

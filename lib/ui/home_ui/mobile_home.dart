@@ -8,8 +8,69 @@ class MobileHome extends StatefulWidget {
 class _MobileHomeState extends State<MobileHome> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.green,
+    return Scaffold(
+      drawer: Drawer(
+        child: _drawerContent(),
+      ),
+      appBar: AppBar(),
+      body: Padding(
+        padding: EdgeInsets.all(5),
+        child: Column(
+          children: [
+            Text('flutdev'),
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.settings),
+        onPressed: () {},
+      ),
+    );
+  }
+
+  Widget _drawerContent() {
+    return Padding(
+      padding: EdgeInsets.all(7),
+      child: Column(
+        children: [
+          Container(
+            child: FlatButton(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Icon(Icons.home_outlined),
+                  Text('HOME'),
+                ],
+              ),
+              onPressed: () {},
+            ),
+          ),
+          Container(
+            child: FlatButton(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Icon(Icons.info_outline),
+                  Text('ABOUT'),
+                ],
+              ),
+              onPressed: () {},
+            ),
+          ),
+          Container(
+            child: FlatButton(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Icon(Icons.email_outlined),
+                  Text('CONTACT'),
+                ],
+              ),
+              onPressed: () {},
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
