@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myprofilio2020/ui/shared/floatingactionbutton.dart';
 
 class TabletHome extends StatefulWidget {
   @override
@@ -17,10 +18,7 @@ class _TabletHomeState extends State<TabletHome> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.settings),
-        onPressed: () {},
-      ),
+      floatingActionButton: FloatinButton(),
     );
   }
 }
