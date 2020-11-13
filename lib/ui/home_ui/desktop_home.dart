@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myprofilio2020/constants/constant.dart';
 import 'package:myprofilio2020/ui/shared/floatingactionbutton.dart';
@@ -52,24 +53,59 @@ class _DesktopHomeState extends State<DesktopHome> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              'HOME',
-              style: GoogleFonts.lato(
-                textStyle: TextStyle(fontSize: 25, letterSpacing: .5),
+              'home',
+              style: GoogleFonts.pacifico(
+                textStyle: TextStyle(
+                  fontSize: 25,
+                  letterSpacing: .5,
+                  // fontStyle: FontStyle.italic,
+                ),
               ),
             ),
             SizedBox(
               width: MediaQuery.of(context).size.width * 0.04,
             ),
-            Text(
-              'ABOUT',
-              style: TextStyle(fontSize: 25),
+            Container(
+              // color: kPrimaryColor,
+              child: FlatButton(
+                child: Text(
+                  'about',
+                  style: GoogleFonts.pacifico(
+                    textStyle: TextStyle(
+                      fontSize: 25,
+                      letterSpacing: .5,
+                    ),
+                  ),
+                ),
+                onPressed: () {},
+              ),
+              decoration: BoxDecoration(
+                color: kPrimaryLightColor,
+                borderRadius: BorderRadius.circular(20),
+              ),
             ),
             SizedBox(
               width: MediaQuery.of(context).size.width * 0.04,
             ),
-            Text(
-              'CONTACT',
-              style: TextStyle(fontSize: 25),
+            Container(
+              // color: kPrimaryColor,
+              child: FlatButton(
+                child: Text(
+                  'contact',
+                  style: GoogleFonts.pacifico(
+                    textStyle: TextStyle(
+                      fontSize: 25,
+                      letterSpacing: .5,
+                      // fontStyle: FontStyle.italic,
+                    ),
+                  ),
+                ),
+                onPressed: () {},
+              ),
+              decoration: BoxDecoration(
+                color: kPrimaryLightColor,
+                borderRadius: BorderRadius.circular(20),
+              ),
             ),
           ],
         ),

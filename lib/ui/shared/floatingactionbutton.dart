@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myprofilio2020/constants/constant.dart';
 
 class FloatinButton extends StatefulWidget {
   @override
@@ -9,7 +10,8 @@ class _FloatinButtonState extends State<FloatinButton> {
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton(
-      child: Icon(Icons.home),
+      backgroundColor: kPrimaryColor,
+      child: Icon(Icons.language),
       onPressed: () {},
     );
   }
