@@ -54,7 +54,7 @@ class _DesktopHomeState extends State<DesktopHome> {
           children: [
             Text(
               'home',
-              style: GoogleFonts.pacifico(
+              style: GoogleFonts.macondoSwashCaps(
                 textStyle: TextStyle(
                   fontSize: 25,
                   letterSpacing: .5,
@@ -70,7 +70,7 @@ class _DesktopHomeState extends State<DesktopHome> {
               child: FlatButton(
                 child: Text(
                   'about',
-                  style: GoogleFonts.pacifico(
+                  style: GoogleFonts.mcLaren(
                     textStyle: TextStyle(
                       fontSize: 25,
                       letterSpacing: .5,
@@ -81,7 +81,7 @@ class _DesktopHomeState extends State<DesktopHome> {
               ),
               decoration: BoxDecoration(
                 color: kPrimaryLightColor,
-                borderRadius: BorderRadius.circular(20),
+                borderRadius: BorderRadius.circular(15),
               ),
             ),
             SizedBox(
@@ -92,7 +92,7 @@ class _DesktopHomeState extends State<DesktopHome> {
               child: FlatButton(
                 child: Text(
                   'contact',
-                  style: GoogleFonts.pacifico(
+                  style: GoogleFonts.mcLaren(
                     textStyle: TextStyle(
                       fontSize: 25,
                       letterSpacing: .5,
@@ -104,7 +104,7 @@ class _DesktopHomeState extends State<DesktopHome> {
               ),
               decoration: BoxDecoration(
                 color: kPrimaryLightColor,
-                borderRadius: BorderRadius.circular(20),
+                borderRadius: BorderRadius.circular(15),
               ),
             ),
           ],

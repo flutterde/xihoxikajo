@@ -16,13 +16,14 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  String site_title = 'Profolio';
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       locale: DevicePreview.of(context).locale, // <--- /!\ Add the locale
       builder: DevicePreview.appBuilder,
-      title: 'Profolio',
+      title: site_title,
       theme: ThemeData(
         primaryColor: kPrimaryColor,
       ),
